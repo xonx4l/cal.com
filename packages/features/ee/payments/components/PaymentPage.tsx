@@ -109,7 +109,7 @@ const PaymentPage: FC<PaymentPageProps> = (props) => {
                         {new Intl.NumberFormat(i18n.language, {
                           style: "currency",
                           currency: paymentAppData.currency,
-                        }).format(paymentAppData.price / 100.0)}
+                        }).format(convertedAmount)}
                       </div>
                     </div>
                   </div>
